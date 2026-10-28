@@ -14,10 +14,11 @@ Code behind a one-day inventory snapshot (28 Oct 2026) comparing every live list
 
 ## Run it
 
-1. Open `https://luxlexicon.com/en-my` in a browser, paste `collect_luxury.js` into the developer console and run it. Repeat on `https://carousellluxury.com/en-my`. Put both JSON files in `data/`.
-2. `pip install -r requirements.txt`
-3. `python clean.py`
-4. `python build_xlsx.py` (writes `out/Luxury_Inventory_Snapshot.xlsx`, which opens in Google Sheets via File > Import)
+1. Open https://luxlexicon.com/en-my in Chrome, open the developer console (F12 → Console), paste collect_luxury.js and press Enter. (Chrome may ask you to type "allow pasting" first.) It downloads luxlexicon_data.json. Repeat on https://carousellluxury.com/en-my to get carousell_luxury_data.json.
+2. Create a folder called data/ next to the scripts and move both JSON files into it.
+3. pip install -r requirements.txt
+4. python clean.py
+5. python build_xlsx.py (writes out/Luxury_Inventory_Snapshot.xlsx; open it in Google Sheets via File > Import > Upload)
 
 ## Notes
 
